@@ -1,0 +1,12 @@
+package day6.utils;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class HibernateUtils {
+	public static SessionFactory getSessionFactory() {
+		Configuration hibernateConfig = new Configuration();
+		SessionFactory hibernateFactory = hibernateConfig.configure().buildSessionFactory();
+		return hibernateFactory;
+	}
+}

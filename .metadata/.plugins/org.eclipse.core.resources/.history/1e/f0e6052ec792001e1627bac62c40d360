@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "day6.beans.Restaurant"  table="restuarant_master_details" lazy="false">
+      <id name = "restaurantId" type = "int" column="rest_id"/>            
+      <property name = "name" column = "rest_name" type = "string"/>
+      <property name = "cuisine" column = "rest_cuisine" type = "string"/>
+      <property name = "branchCount" type = "int">
+      	<column name="rest_branches"></column>
+      </property>     
+   </class>
+</hibernate-mapping>

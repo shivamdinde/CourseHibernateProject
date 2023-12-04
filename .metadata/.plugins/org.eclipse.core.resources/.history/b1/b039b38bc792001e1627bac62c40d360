@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "day6.beans.CourseProject"  table="CourseProjectAdv_master_details" lazy="false">
+      <id name = "CourseId" type = "int" column="rest_id"/>            
+      <property name = "Title" column = "rest_name" type = "string"/>
+      <property name = "Duration" column = "rest_cuisine" type = "string"/>
+      <property name = "Provider" type = "int">
+      	<column name="Fees"></column>
+      </property>     
+   </class>
+</hibernate-mapping>
